@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+.share {
+  position:absolute;
+  right: 10%;
+  cursor: pointer;
+  background: url('./img/_Avatar share button.png') no-repeat center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.share:active {
+  background: url("./img/3dot_pressed.png") no-repeat center;
+}
+
+/* .share: */
+
+.picture {
+  background: url('./img/profile__img.png') no-repeat center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.picture:hover {
+  background: url('./img/Device=Web, State=Hover.png') no-repeat center;
+}
+
+.slack {
+  display: none;
+}
+
+.link_section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  
+}
+
+.buttons {
+  width: 343px;
+  height: 68px;
+  background: #EAECF0;
+  border: 1px solid #EAECF0;
+  border-radius: 8px;
+  padding: 24px 32px;
+  cursor: pointer;
+  /* display:grid;
+  place-items:center; */
+
+}
+
+.buttons:hover {
+ background: #D0D5DD;
+}
+
+
+.icon {
+  margin: 10px;
+}
+
+h2 {
+  color: #101828;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+}
+
+p {
+  color: #101828;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+.footer_container {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer_p {
+  color: #667085;
+  font-size: 0.8rem;
+}
+hr {
+  display: none;
+  width:
+}
+
+br {
+  height: 500px;
+  width: auto;
+}
+
+
+@media only screen and (min-width: 900px){
+  .buttons {
+    width: 80vw;
+  }
+
+  .footer_container {
+    display: flex;
+    width:80vw;
+  }
+
+  .share {
+    background: url('./img/Type=Share, State=Focus.png') no-repeat center;
+  }
+  
+  .share:active {
+    background: url("./img/share_active.png") no-repeat center;
+  }
+
+  hr {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .buttons {
+    width: 1000px;
+  }
+  .footer_container {
+    width: 1000px;
+  }
+}
